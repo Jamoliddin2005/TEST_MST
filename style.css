@@ -239,7 +239,7 @@ section .form-item .left {
   width: 55%;
 }
 
-section .form-item .right img{
+section .form-item .right img {
   position: absolute;
   right: 100px;
   bottom: 0px;
@@ -302,4 +302,71 @@ section .form-item .left form button {
   font-size: 24px;
   line-height: 36px;
   color: var(--white);
+}
+
+/* --------------------- Footer started --------------------- */
+
+footer {
+  background: var(--dark);
+  margin-top: 100px;
+}
+
+footer .footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid var(--orange);
+  border-bottom: 1px solid var(--orange);
+  padding: 35px 0;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+footer .footer-top li a {
+  font-family: var(--Arial);
+  font-size: 20px;
+  font-style: italic;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+footer .footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer .footer-row .socials {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+footer .footer-row .logo a {
+  font-size: 46px;
+  font-family: var(--Prata);
+  color: var(--white);
+  line-height: 54px;
+}
+
+footer .footer-row .right a.btn {
+  font-style: italic;
+  font-size: 20px;
+  padding: 20px 50px;
+  margin-bottom: 35px;
+}
+
+footer .footer-row.end {
+  padding-bottom: 40px;
+}
+footer .footer-row.end,
+footer .footer-row.end a {
+  color: var(--white);
+  font-size: 20px;
+  font-family: var(--Arial);
+  line-height: 30px;
+}
+
+footer .footer-row.end a {
+  color: var(--orange);
 }
