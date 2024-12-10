@@ -57,6 +57,17 @@ header nav {
   left: 0;
   z-index: 5;
   padding: 30px 0;
+  transition: 0.2s;
+}
+
+header .bars,
+header .mobile-nav {
+  display: none;
+}
+.scrolled {
+  background-color: var(--dark);
+  box-shadow: 0 4px 8px rgba(21, 21, 21, 0.5);
+  position: fixed;
 }
 
 header .navbar-row {
@@ -219,6 +230,8 @@ main a.btn {
   font-size: 20px;
   display: block;
   text-align: center;
+  position: relative;
+  z-index: 3;
 }
 
 /* ----------------------------- Section Form started ----------------------------- */
@@ -369,4 +382,529 @@ footer .footer-row.end a {
 
 footer .footer-row.end a {
   color: var(--orange);
+}
+
+@media (max-width: 1853px) {
+  main .main-row .center {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 1812px) {
+  main a.btn {
+    margin-top: 0;
+  }
+  main .main-row .center .item p {
+    font-size: 20px;
+  }
+  section .form-item {
+    padding: 0 90px;
+  }
+  section .form-item .left {
+    width: 50%;
+  }
+
+  main .main-row .left img,
+  main .main-row .right img {
+    width: 100%;
+  }
+  main .main-row .center {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1700px) {
+  main .main-row .center {
+    width: 45%;
+  }
+  main .main-row .center .item {
+    margin-top: 15px;
+    padding-bottom: 30px;
+  }
+  main a.btn {
+    margin-bottom: 0;
+  }
+  main .main-row {
+    align-items: flex-end;
+  }
+  main {
+    padding-top: 70px;
+  }
+  section .form-item {
+    margin-top: 100px;
+  }
+  section .form-item .right img {
+    right: 30px;
+  }
+
+  section .form-item {
+    background-position-x: 125px;
+  }
+}
+
+@media (max-width: 1450px) {
+  main .main-row .center .item p {
+    font-size: 17px;
+    line-height: 30px;
+  }
+  section .form-item .right img {
+    right: 0;
+  }
+}
+
+@media (max-width: 1380px) {
+  .container-item {
+    width: 90%;
+  }
+  .scrolled {
+    padding: 20px 0;
+  }
+  main .main-row .center .item {
+    padding-bottom: 20px;
+  }
+  main {
+    padding-top: 50px;
+  }
+  section .form-item,
+  footer {
+    margin-top: 70px;
+  }
+  header .header-layout {
+    padding-top: 150px;
+  }
+  a.btn {
+    padding: 23px 41px;
+    margin-bottom: 30px;
+  }
+  header .haeder-item .left-header h1 {
+    font-size: 75px;
+  }
+  header .haeder-item .left-header h3 {
+    font-size: 45px;
+  }
+  header .haeder-item .left-header ul li p {
+    font-size: 20px;
+  }
+  header .haeder-item .left-header ul li p span {
+    font-size: 35px;
+  }
+  header .haeder-item .left-header ul li {
+    margin-top: 20px;
+  }
+  header .navbar-row .icon {
+    margin-right: 130px;
+  }
+  header .haeder-item .left-header ul li img {
+    width: 35px;
+  }
+}
+
+@media (max-width: 1275px) {
+  main .main-row .center .item p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  main .main-row .center .item {
+    align-items: start;
+  }
+  main .main-row .center {
+    width: 57%;
+  }
+}
+
+@media (max-width: 1221px) {
+  header .navbar-row .icon {
+    margin-right: 110px;
+  }
+  header .navbar-row .icon a,
+  footer .footer-row .logo a {
+    font-size: 42px;
+  }
+  section .form-item {
+    padding: 0 20px;
+  }
+  section .form-item .right img {
+    right: -40px;
+  }
+  main .main-row .center .item img {
+    width: 45px;
+  }
+  main .main-row .center {
+    padding: 0 15px;
+  }
+  section .form-item .left form button {
+    padding: 20px 15px;
+  }
+  footer .footer-top li a {
+    font-size: 16px;
+  }
+  footer .footer-top {
+    padding: 20px 0;
+    gap: 30px;
+    margin-bottom: 0;
+  }
+  header .haeder-item .left-header {
+    width: 60%;
+  }
+}
+
+@media (max-width: 1158px) {
+  section .form-item {
+    height: 565px;
+  }
+  section .form-item .right img {
+    right: -50px;
+    width: 52%;
+  }
+  section .form-item {
+    background-position-x: 60px;
+  }
+  section {
+    overflow: hidden;
+  }
+  header .navbar-row .right li a {
+    font-size: 14px;
+  }
+  header .navbar-row .right {
+    gap: 25px;
+  }
+  header .navbar-row .icon a,
+  footer .footer-row .logo a {
+    font-size: 35px;
+  }
+  header .haeder-item .left-header h1 {
+    font-size: 65px;
+  }
+  header .haeder-item .left-header h3 {
+    font-size: 40px;
+    margin-top: 0;
+  }
+  header .haeder-item .left-header ul li {
+    margin-top: 16px;
+  }
+  a.btn {
+    padding: 17px 35px;
+    margin-bottom: 25px;
+  }
+  main .main-row .center .item {
+    margin-top: 7px;
+    padding-bottom: 15px;
+  }
+  main .main-row .center .item p {
+    font-size: 14px;
+  }
+  main a.btn {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  header nav {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 1020px) {
+  header .navbar-row .icon {
+    margin-right: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .navbar-row .icon a,
+  footer .footer-row .logo a {
+    font-size: 30px;
+  }
+  header .navbar-row .right li a {
+    font-size: 13px;
+  }
+  header .haeder-item .left-header h1 {
+    font-size: 59px;
+  }
+  header .header-layout {
+    padding-top: 50px;
+  }
+  header .haeder-item .left-header h3 {
+    font-size: 32px;
+    line-height: normal;
+  }
+  header .haeder-item .left-header ul li p {
+    font-size: 17px;
+  }
+  a.btn {
+    padding: 12px 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  main {
+    padding-top: 30px;
+  }
+  section .form-item,
+  footer {
+    margin-top: 30px;
+  }
+  header .haeder-item .left-header ul li p span {
+    font-size: 25px;
+  }
+  header .haeder-item .left-header ul li img {
+    width: 30px;
+  }
+  header .haeder-item .left-header ul li {
+    gap: 10px;
+  }
+  main .main-row .center {
+    width: 70%;
+  }
+  main .main-row .center .item img {
+    display: none;
+  }
+  main a.btn {
+    padding-top: 7px;
+    padding-bottom: 6px;
+    font-size: 16px;
+  }
+  .container-item {
+    width: 95%;
+  }
+  header .haeder-item .left-header {
+    width: 56%;
+  }
+  section .form-item {
+    border-radius: 15px;
+  }
+  section .form-item .left h2 {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  section .form-item .left form input {
+    padding: 10px 17px 10px 22px;
+    font-size: 20px;
+  }
+  section .form-item .left form .checkbox {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+  section .form-item .left form button {
+    padding: 12px 11px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  section .form-item {
+    height: 453px;
+  }
+  section .form-item .right img {
+    right: -45px;
+    width: 45%;
+  }
+  footer .footer-row .right a.btn {
+    font-size: 16px;
+    padding: 10px 34px;
+    margin-bottom: 26px;
+  }
+  footer .footer-row .socials {
+    gap: 20px;
+  }
+  footer .footer-row.end,
+  footer .footer-row.end a {
+    font-size: 15px;
+  }
+  .scrolled {
+    padding: 5px 0;
+  }
+  section .form-item .left {
+    width: 53%;
+  }
+  header nav {
+    position: relative;
+    padding: 10px 0;
+  }
+
+  header .navbar-row {
+    justify-content: space-between;
+  }
+  header .navbar-row .icon {
+    margin-right: 0;
+  }
+  header .haeder-item .right-header {
+    width: auto;
+  }
+}
+
+@media (max-width: 890px) {
+  main .main-row .center .item p {
+    line-height: 18px;
+  }
+  section .form-item {
+    background-position-x: -60px;
+  }
+}
+
+@media (max-width: 800px) {
+  header .haeder-item .right-header {
+    position: relative;
+  }
+  header .header-layout {
+    padding-top: 30px;
+  }
+  header .haeder-item .left-header h1 {
+    font-size: 65px;
+  }
+  header .haeder-item .left-header {
+    width: 78%;
+  }
+  main .main-row {
+    flex-wrap: wrap;
+  }
+  main .main-row .center {
+    order: -1;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 0;
+  }
+  main .main-row .center .item img {
+    display: block;
+  }
+  main .main-row .center .item p {
+    line-height: 25px;
+    font-size: 16px;
+  }
+  main .main-row .left,
+  main .main-row .right {
+    width: 49%;
+    height: 400px;
+  }
+  main .main-row .left img,
+  main .main-row .right img {
+    object-fit: cover;
+    height: 100%;
+  }
+  .container-item {
+    width: 100%;
+  }
+  .container {
+    width: 95%;
+  }
+  section {
+    margin-top: 30px;
+  }
+
+  section .form-item {
+    height: 370px;
+    margin-top: 0;
+    background-color: var(--white);
+    background-image: none;
+  }
+  section .form-item .left h2 {
+    font-size: 32px;
+    margin-bottom: 14px;
+    line-height: 35px;
+  }
+  section .form-item .left form input {
+    padding: 5px 11px 5px 15px;
+    font-size: 15px;
+    margin-bottom: 7px;
+  }
+  section .form-item .left form .checkbox input {
+    width: 15px;
+    height: 15px;
+  }
+  section .form-item .left form button {
+    padding: 7px 7px;
+    font-size: 17px;
+    line-height: 28px;
+  }
+  section .form-item .right img {
+    width: 44%;
+    right: 0;
+  }
+}
+
+@media (max-width: 630px) {
+  header .haeder-item .left-header {
+    width: 100%;
+  }
+  footer .footer-row {
+    flex-direction: column;
+  }
+  footer .logo {
+    margin-top: 30px;
+  }
+  section .form-item .left {
+    width: 100%;
+  }
+  main .main-row .left,
+  main .main-row .right {
+    height: 300px;
+  }
+  header .haeder-item .left-header h1 {
+    font-size: 54px;
+  }
+  header .haeder-item .left-header h3 {
+    font-size: 28px;
+  }
+  header .haeder-item .left-header ul li p {
+    font-size: 15px;
+  }
+  header .navbar-row .right {
+    display: none;
+  }
+  header .bars {
+    display: block;
+    width: 40px;
+  }
+  header .mobile-nav {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    background-color: var(--dark);
+    width: 100%;
+    height: 100vh;
+    z-index: 6;
+    transition: 0.3s;
+  }
+
+  header .mobile-nav .close img {
+    width: 30px;
+  }
+
+  header .mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+
+  header .mobile-nav ul li a {
+    color: var(--white);
+    font-family: var(--Prata);
+    text-transform: uppercase;
+    font-size: 25px;
+  }
+
+  footer .footer-top li a {
+    font-size: 14px;
+  }
+  footer .footer-top {
+    padding: 13px 0;
+    gap: 15px;
+    margin-bottom: 0;
+  }
+  section .form-item .right img {
+    display: none;
+  }
+  main .main-row .center .item p {
+    line-height: 27px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 340px) {
+  header .haeder-item .left-header h1 {
+    font-size: 50px;
+  }
 }
