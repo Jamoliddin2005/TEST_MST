@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Arial;
+  src: url("./assets/fonts/arial.ttf");
+}
+@font-face {
+  font-family: Prata;
+  src: url("./assets/fonts/Prata-Regular.ttf");
+  font-weight: 400;
+}
+
+:root {
+  --Arial: Arial;
+  --Prata: Prata;
+  --dark: #222222;
+  --grey: #282829;
+  --white: #fff;
+  --blue: #38535d;
+  --orange: #d5c9be;
+}
+
+body {
+  background: var(--grey);
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: auto;
+}
+
+header {
+  background-color: var(--dark);
+}
+
+.container-item {
+  width: 80%;
+  margin: auto;
+}
+
+header .container {
+  position: relative;
+  height: auto;
+}
+
+header nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 30px 0;
+}
+
+header .navbar-row {
+  display: flex;
+  align-items: center;
+}
+
+header .navbar-row .right {
+  display: flex;
+  align-items: center;
+  gap: 29px;
+}
+
+header .navbar-row .right li a {
+  font-family: var(--Arial);
+  font-style: italic;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 4%;
+}
+
+header .navbar-row .icon {
+  margin-right: 150px;
+}
+header .navbar-row .icon a {
+  font-size: 46px;
+  font-family: var(--Prata);
+  color: var(--white);
+  line-height: 54px;
+  letter-spacing: 3%;
+}
+
+header .header-layout {
+  padding-top: 200px;
+}
+header .haeder-item .right-header {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 36%;
+  height: 100%;
+}
+
+header .haeder-item .right-header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+header .haeder-item .left-header {
+  width: 45%;
+}
+header .haeder-item .left-header h1 {
+  font-size: 80px;
+  font-family: var(--Prata);
+  font-weight: 400;
+  color: var(--white);
+}
+
+header .haeder-item .left-header h3 {
+  font-family: var(--Arial);
+  font-weight: 400;
+  line-height: 60px;
+  color: var(--white);
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+header .haeder-item .left-header ul li {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  background-color: rgba(40, 40, 41, 0.7);
+  padding-right: 20px;
+  gap: 17px;
+  border-radius: 4px;
+  margin-top: 35px;
+}
+
+header .haeder-item .left-header ul li p {
+  font-size: 24px;
+  color: var(--white);
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--Arial);
+}
+
+header .haeder-item .left-header ul li p span {
+  font-size: 40px;
+  font-family: var(--Prata);
+}
+
+a.btn {
+  background-color: var(--white);
+  border-radius: 4px;
+  padding: 31px 49px;
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 50px;
+  font-family: var(--Arial);
+  font-weight: 700;
+  font-size: 24px;
+  letter-spacing: 4%;
+  line-height: 36px;
+  color: var(--dark);
+  transition: 0.3s;
+  border: 1px solid var(--white);
+}
+
+a.btn:hover {
+  background-color: var(--dark);
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+
+/* ---------------- Main started ----------------  */
+
+main {
+  padding-top: 100px;
+}
+
+main .main-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+main .main-row .center {
+  padding: 0 50px;
+}
+main .main-row .center .item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(85, 86, 90, 1);
+  margin-top: 30px;
+}
+
+main .main-row .center .item:nth-child(4) {
+  border: none;
+}
+
+main .main-row .center .item img {
+  width: 55px;
+}
+
+main .main-row .center .item p {
+  font-weight: 400;
+  font-size: 24px;
+  font-family: var(--Arial);
+  line-height: 33px;
+  color: var(--white);
+}
+main a.btn {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  display: block;
+  text-align: center;
+}
+
+/* ----------------------------- Section Form started ----------------------------- */
+
+section .form-item {
+  margin-top: 50px;
+  border-radius: 30px;
+  border: 2px solid rgba(213, 201, 190, 1);
+  background: url("./assets/img/form-bg.png") no-repeat right, var(--white);
+  display: flex;
+  align-items: center;
+  padding: 0 134px;
+  height: 630px;
+  position: relative;
+}
+
+section .form-item .left {
+  width: 55%;
+}
+
+section .form-item .right img{
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+}
+
+section .form-item .left h2 {
+  color: var(--blue);
+  font-family: var(--Prata);
+  font-size: 54px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+section .form-item .left form {
+  display: flex;
+  flex-direction: column;
+}
+
+section .form-item .left form input {
+  border: 2px solid rgba(214, 214, 214, 1);
+  border-radius: 4px;
+  padding: 13px 20px 13px 25px;
+  gap: 8px;
+  margin-bottom: 12px;
+  outline: none;
+  font-family: var(--Arial);
+  font-size: 24px;
+  line-height: 36px;
+  color: rgba(85, 86, 90, 1);
+}
+
+section .form-item .left form .checkbox {
+  display: flex;
+  align-items: center;
+  font-family: var(--Arial);
+  font-weight: 400;
+  font-size: 19px;
+  color: rgba(85, 86, 90, 1);
+  margin: 28px 0;
+  margin-top: 20px;
+}
+
+section .form-item .left form .checkbox a {
+  color: rgba(85, 86, 90, 1);
+}
+section .form-item .left form .checkbox input {
+  margin-bottom: 0;
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  accent-color: rgba(85, 86, 90, 1);
+}
+
+section .form-item .left form button {
+  background-color: var(--grey);
+  border-radius: 4px;
+  padding: 25px 20px;
+  cursor: pointer;
+  font-family: var(--Arial);
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--white);
+}
